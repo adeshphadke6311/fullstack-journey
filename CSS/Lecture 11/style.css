@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.box{
+    height:200px;
+    width:200px;
+    background-color: aquamarine;
+    border:2px solid; /*Taken black as default*/
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+}
+
+.wrapper{
+    display: flex;
+    border:2px solid red;
+    width:100vw;
+    height:800px;
+    margin-top: 50px;
+    position: relative;
+
+}
+
+#box1{
+    position: static;
+    top:200px;
+    left:200px;
+    
+
+    /* This will not take place because position is set as static i.e Default */
+
+}
+
+#box2{
+    position:relative;
+    top:250px;
+
+
+    /* Here the normal flow remains as it is, and movement takes place accourding to the code */
+    /* Basically it takes the reference of the original position */
+}
+
+#box3{
+    position:absolute;
+
+    top:210px;
+    left:415px;
+    
+
+    /* Here the normal flow will not be retained, it takes the reference of parent element here is body */
+    /* For taking the reference, reference element should have also positioned relative */
+}
+
+
+#box4{
+    position: fixed;
+    bottom : 20px;
+    right:30px;
+
+    /* Doesn't retain normal flow */
+
+}
+
+
+#box5{
+    position: sticky;
+    
+    top : 10px;
+    left:300px;
+
+    /* It will remain sticked to body when there is scrolling of page, it maintains the normal flow*/
+}
+
+
+.wrapper2{
+    display: flex;
+    border:2px solid red;
+    width:100vw;
+    height:800px;
+    position: relative;
+    margin: 20px;
+    
+
+}
+
+.box2{
+    height:200px;
+    width:200px;
+    background-color: aquamarine;
+    border:2px solid;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+}
+
+#box21{
+    position: relative;
+    top:250px;
+    left:100px;
+    z-index: 2;
+
+    /* Here it had taken reference of wrapper2 except body */
+}
+
+#box22{
+    position:sticky;
+    top:10px;
+}
+
+

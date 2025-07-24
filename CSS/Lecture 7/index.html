@@ -1,0 +1,157 @@
+<!-- Date : 12 Jan 2025         Sunday -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, Internal & External CSS</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Between Internal & External CSS, the type of CSS which comes later overwrites the earlier CSS property-->
+    <style>
+        p{
+            border-width: 2px;
+            border-style:double;
+            border-color: black;
+        }
+        
+        a{
+            /*background-color: black !important;
+            If it is marked as !important then no one even inline css can't overwrite this property*/
+            color:red; 
+        }
+
+        details{
+            color:chocolate;
+        }
+
+        /*Element/Tag Selector*/
+        ol>li{
+            color:black;
+            background-color: aqua;
+        }
+
+        /*Id Selector*/
+
+        #idselector{
+            border:2px solid orange;
+            background-color: black;
+            color:white;
+        }
+
+        /*Class Selector*/
+
+        .class_selector{
+            background-color: rgb(176, 131, 131);
+        }
+
+        /*Grouping Selector*/
+
+        p,#idselector,.class_selector{
+            border-radius: 4px;
+        }
+
+        /*Id Selector have higher priority as compared to class selector*/
+
+        #cricket{
+            background-color: blueviolet;
+        }
+
+        .game{
+            background-color: aquamarine;
+
+        }
+
+        /*Pseudo Selector*/
+        ul li:nth-child(1){
+            background-color: orange !important ;
+        }
+
+        ul li:nth-last-child(2){
+            background-color: aqua !important;
+        }
+
+        ul li:nth-of-type(2n+1){
+            background-color: lightgreen;
+        }
+        
+        ul li:nth-last-of-type(2n+1){
+            background-color: bisque;
+        }
+
+
+        ul li:hover{
+            background-color: white !important;
+            /*When we hovers on the li which has a color set as !mportant, it is also overwritten here*/
+        }
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Inline CSS -->
+    <h1 style="background-color:purple; color:white;">Inline, Internal & External CSS</h1>
+
+    <!-- Internal CSS -->
+    <p>Pseudo selectors</p>
+
+    <!-- External CSS -->
+    <div>
+        <h2>Village - Hatwalan</h2>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestiae ipsum iure provident excepturi, aut illum fuga pariatur velit temporibus porro quae ratione numquam a necessitatibus consequuntur aspernatur facilis deleniti nam. Neque culpa vero voluptatum beatae itaque nemo, minima dignissimos.</span>
+    </div>
+    <br>
+    <br>
+
+    <a href="#" style="background-color:indigo; color:white;">Priority between the Inline, Internal and External</a>
+
+    <br>
+    <br>
+
+
+    <!-- Selectors -->
+    <details>
+        <summary>Types of Selectors</summary>
+        <ol>
+            <li>Element/Tag Selector</li>
+            <p>Element/Tag_name{property:value;}</p>
+            <li id="idselector">Id Selector</li>
+            <p>#Id_name{property:value;}</p>
+            <li class="class_selector">Class Selector</li>
+            <p>.Class_name{property:value;}</p>
+            <li>Grouping Selector</li>
+            <p>tag_name,#Id_name,.Class_name{property:value;}</p>
+        </ol>
+    </details>
+
+    <br>
+    <br>
+
+    <div id="cricket" class="game">
+        <h2>Game : Cricket</h2>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quos perferendis numquam animi quidem temporibus quisquam esse obcaecati asperiores? Fugit, temporibus facere. Voluptatibus totam hic recusandae unde sint accusamus ducimus earum. Maxime rerum corrupti provident aut incidunt mollitia eum repellat.</span>
+    </div>
+
+    <br>
+
+    
+
+    <ul>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+        <li>Item-4</li>
+        <li>Item-5</li>
+        <li>Item-6</li>
+        <li>Item-7</li>
+        <li>Item-8</li>
+        <li>Item-9</li>
+        <li>Item-10</li>
+    </ul>
+
+    
+</body>
+</html>

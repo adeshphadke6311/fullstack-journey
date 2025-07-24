@@ -1,0 +1,46 @@
+.wrapper{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border-width: 2px;
+    border-style:ridge;
+    border-radius: 10px;
+    border-bottom: 2px solid green;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(201, 247, 232);
+
+    padding:20px;
+}
+
+.wrapper:hover{
+    background-color: lightpink;
+    
+}
+#h2heading{
+    font-weight: 800;
+    font-style: oblique;  
+    text-align:center;
+    text-decoration:underline solid green;
+    text-shadow: 3px 5px 3px purple;
+    
+}
+
+#h2heading:hover{
+    text-transform:uppercase;
+    text-decoration-line: overline;
+    
+    
+}
+
+
+
+#wrpara{
+    font-family: "Oswald", serif;
+    font-weight: 10px;
+    
+    
+}
+
+#wrpara:hover{
+    color:indigo;
+    text-transform: capitalize;
+}

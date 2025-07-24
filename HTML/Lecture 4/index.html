@@ -1,0 +1,92 @@
+<!-- Date : 07 Jan 2025  Tuesday -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 4</title>
+</head>
+<body>
+    <div>
+        <h3>Types of List</h3>
+        <details>
+            <summary>Ordered List</summary>
+            <p>Attributes : a A i I 1(default)</p>
+        </details>
+        <details>
+            <summary>Unordered List</summary>
+            <p>Attributes : circle, disc, square</p>
+        </details>
+    </div>  
+
+    <div>
+        <ol type="A" start="19">
+            <li>Content 1</li>
+            <li>Content 2</li>
+            <li>Content 3</li>
+            <li>Content 4</li>
+            <li>Content 5</li>
+            <li>Content 6</li>
+            <li>Content 7</li>
+            <li>Content 8</li>
+            <li>Content 9</li>
+            <li>Content 10</li>
+        </ol>
+    </div>
+
+    <div>
+        <ol type="I">
+            <li>List Item 1
+                <ol type="a">
+                    <li>Nested item 1.1</li>
+                    <li>Nested item 1.2</li>
+                </ol>
+            </li>
+            <li>List Item 2
+                <ol>
+                    <li>Nested item 2.1</li>
+                    <li>Nested item 2.2
+                        <ul type="circle">
+                            <li>Nested item 2.2.1</li>
+                            <li>Nested item 2.2.2
+                                <ul>
+                                    <li>Nested item 2.2.2.1</li>
+                                    <li>Nested item 2.2.2.2</li>
+                                </ul>
+                            </li>
+                            <li>Nested item 2.2.3</li>
+                        </ul>
+                    </li>
+                    <li>Nested item 2.3</li>
+                    
+                </ol>
+            </li>
+            <li>List Item 3
+                <ul type="disc">
+                    <li>Nested item 3.1</li>
+                    <li>Nested item 3.2</li>
+                    <li>Nested item 3.3</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <!-- 
+    <div>
+        ul>li*4{Item 2.$}
+    </div>
+
+    In div tag we will get as follows using emmet tool
+
+    <div>
+        <ul>
+            <li>Item 2.1</li>
+            <li>Item 2.2</li>
+            <li>Item 2.3</li>
+            <li>Item 2.4</li>
+        </ul>
+    </div>
+    
+    -->
+</body>
+</html>

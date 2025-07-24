@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box{
+    width: 100%;
+    height: 100px;
+    background-color: indigo;
+    font-size: 25px;
+    text-align: center;
+    margin: 5px 0px;
+    display: none;
+}
+
+@media screen and (max-width:480px){
+    #smallphones{
+        display: block;
+        font-size: 55px;
+        background-color: aqua;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+    #Tablet{
+        display: block;
+        font-size: 70px;
+        background-color: blueviolet;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1279px) {
+    #Laptop{
+        display: block;
+        background-color: aquamarine;
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    #Largescreen{
+        display: block;
+        background-color: lightcoral;
+        font-size: 85px;
+    }
+}
+

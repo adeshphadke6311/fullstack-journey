@@ -1,0 +1,63 @@
+div{
+    border:2px solid black;
+    width:600px;
+    height:400px;
+    text-align: center;
+    background-image: url(https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:white;
+    
+}
+
+#color_by_name{
+    background-color: aquamarine;
+}
+
+#color_by_rgb{
+    background-color: rgb(0,0,0);
+    color:rgb(255,255,255);
+    /* Format of rgb = rgb(red,green,blue) and value will be in between 0 to 255 */
+    border: 10px solid rgba(77, 60, 208, 0.7);
+
+    /* a denotes alpha value which indicates opacity of color and its value ranges from 0 to 1 */
+    
+    
+}
+
+#color_by_hex{
+    background-color: #000000;
+    color: #ffffff;
+    border: 10px solid #eb0994a8;
+
+    /* Format of hex = #red green blue alpha, value ranges from 0 to 9 and 1-f, #00 ff 1a af; */
+}
+
+#color_by_hsl{
+    background-color: hsl(357, 65%, 28%);
+    color: hsl(0, 0%, 100%);
+
+    border:10px solid hsla(115, 55%, 52%, 0.619)
+}
+
+
+body{
+
+    /* Gradient is nothing but the combination of colors */
+
+    /* background: linear-gradient( to left,red,green,indigo); */
+    /* background: linear-gradient( 20deg,red,green,indigo); */
+
+    /* background:radial-gradient(red,green); */
+
+    /* background:conic-gradient(orange,white,green,blue); */
+    
+
+    /* Using the Gradient generator */
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(199,197,224,1) 8%, rgba(57,255,133,1) 40%, rgba(80,147,228,1) 66%);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

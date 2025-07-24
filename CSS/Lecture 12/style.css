@@ -1,0 +1,56 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+}
+
+.wrapper{
+    border:2px solid black;
+    background-color: aquamarine;
+    width:8in ;
+    height: 11cm;
+    /* Basically 1in = 1/96px */ 
+    
+    /* Absolute units are used, so they don't get adjusted with any reference, remains fixed */
+    
+    font-size: 2em;
+    /* Takes the reference of parent i.e wrapper2 */
+    margin:1em;
+    /* Now it is taking the reference of font-size which is declared in this class */
+    padding: 30px;
+    }
+    
+    .wrapper2{
+        border:2px solid black;
+        background-color: rgb(242, 254, 193);
+        width:80vw ;
+        height: 95vh;
+        margin:18px;
+        padding: 30px;
+        font-size: 10px;
+
+        /* Relative units are used so they get adjusted with reference element  */
+        
+        
+    
+    }
+
+    .wrapper h1{
+        font-size: 1.5rem;
+        /* Takes the reference of root i.e html */
+    }
+    
+    .box{
+        width: 50%;
+        height: 30%;
+        background-color: blue;
+        border:2px solid;
+    }
+  
+
+
+

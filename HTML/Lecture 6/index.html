@@ -1,0 +1,225 @@
+<!-- Date : 09 Jan 2025    Thursday -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .form1 input{
+            
+            margin: 15px;
+        }
+        .wrapper{
+            border:2px solid black;
+            padding: 10px 30px;
+            color:white;
+            width:800px;
+            height: 510px;
+            margin: auto;
+            background-color:rgb(20 145 101 / 69%) ;
+            font-size: 20px;
+            
+
+            
+        }
+        .wrapper h1{
+            display: block;
+            text-align: center;
+            color:white;
+        }
+
+        .right{
+            float: right;
+        }
+
+        .buttons{
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn{
+            padding: 10px;
+            margin: 10px 15px;
+            background-color: rgb(249, 162, 0);
+            color: white;
+            width:150px;
+            font-size: 16px;
+        }
+        .btn:hover{
+            cursor: pointer;
+            scale: 0.95;
+        }
+       
+
+
+
+       
+    </style>
+</head>
+<body>
+    
+    
+    
+    <div class="wrapper">
+        <h1>Application Form</h1>
+
+        <form action="./lecture6a.html">
+            <div>
+
+                <span>
+    
+                    <label for="fname">First Name : </label>
+                    <input type="text" name="" id="fname" required>
+                </span>
+    
+                <span class="right">
+    
+                    <label for="lname">Last Name : </label>
+                    <input type="text" id="lname" required> <br>
+                </span>
+            </div>
+            <br>
+
+            <div>
+
+                <span>
+    
+                    <label for="dob">Date of birth : </label>
+                    <input type="date" name="" id="dob" required>
+                </span>
+    
+                <span class="right">
+    
+                    <label for="age" >Age :</label>
+                    <input type="number" name="" id="age">
+                </span>
+            </div>
+            <br>
+
+
+            <div>
+                <span>
+
+
+                    <label for="gender">Gender : </label>
+                    <select name="" id="gender">
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Transgender</option>
+                    </select>
+                </span >
+
+                <span class="right">
+                    <label for="email">Email Address : </label>
+                    <input type="email" name="" id="email"> <br>
+
+                </span>
+            </div>
+            <br>
+
+
+            <label for="role">Positions Available : </label>
+            
+            <input type="radio" name="unique" id="role">
+            <label for="role">Junior Developer</label>
+
+            <input type="radio" name="unique" id="role1">
+            <label for="role1">Mid-level Developer</label>
+
+            <input type="radio" name="unique" id="role2">
+            <label for="role2">Senior Developer</label>
+            <br>
+            <br>
+
+            <label for="pl">Programming Languages</label>
+
+            <input type="checkbox" name="" id="pl">
+            <label for="pl">Java</label>
+
+            <input type="checkbox" name="" id="pl1">
+            <label for="pl1">JavaScript</label>
+            
+            <input type="checkbox" name="" id="pl2">
+            <label for="pl2">Python</label>
+            <br>
+            <br>
+
+            <div>
+                <span>
+
+
+                    <label for="pass">Password : </label>
+                    <input type="password" name="" id="pass">
+                </span>
+
+                <span class="right">
+                    
+                    <label for="cpass">Confirm Password</label>
+                    <input type="password" name="" id="cpass"> 
+                </span>
+            </div>
+            <br>
+
+
+
+            <div class="buttons">
+
+                <input type="submit" value="Submit" class="btn"> 
+                <input type="reset" value="Reset" class="btn">
+            </div>
+
+
+        </form>
+
+    </div>
+
+
+    <!-- All the Attributes of input tag -->
+
+    <h3>Form in HTML</h3>
+    <form class="form1" action="./lecture6a.html">
+        Button :<input type="button" value="Hide"> <br>
+        Checkbox :<input type="checkbox"> <br>
+        Colour Picker :<input type="color">  <br>
+        Date : <input type="date"><br>
+        Datetime : <input type="datetime" name="" id=""><br>
+        Datetime-local : <input type="datetime-local"><br>
+        Email : <input type="email"><br>
+        Attach File : <input type="file"><br>
+        Hidden Field<input type="hidden" id="custId"><br>
+        <!-- This field will not be visible on webpage but visible and editable to developer only -->
+        Peacock Feather : <br><input type="image" src="../Images/image.jpg" alt="Not loaded" width="300px" height="400px" onclick="return false"><br>
+        Month :<input type="month"><br>
+        Number : <input type="number"><br>
+        Password : <input type="password"><br>
+        Radio Buttons: Male : <input type="radio" name="gender"> Female :<input type="radio" name="gender"><br>
+        Range : <input type="range"><br>
+        Searchbar<input type="search"><br>
+        Mobile Number : 
+        <select name="" id="">
+            <option value="">+92</option>
+            <option value="">+93</option>
+            <option value="">+94</option>
+            <option value="">+95</option>
+            <option value="" selected>+91</option>  
+        </select>
+        <input type="tel" pattern="[0-9]{10}"><br>
+        Text : <input type="text"><br>
+        Time : <input type="time"><br>
+        URL : <input type="url"><br>
+        Week : <input type="week"><br>
+        Anything :  <input><br>
+        Checkbox : Are you eligible ?<input type="checkbox" checked><br>
+        Write about yourself ? <br>
+        <textarea name="" id="" rows="2" cols="45"></textarea><br>
+        Reset Button<input type="reset"><br>
+        Submit Button : <input type="submit"><br>
+    </form>
+
+    
+</body>
+</html>
