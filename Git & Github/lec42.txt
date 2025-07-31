@@ -1,0 +1,90 @@
+📅 Date: 22/07/2025 (Tuesday)
+
+=======================
+🔄 Git Reset
+=======================
+
+Undo commits without losing changes:
+git reset --soft HEAD~1
+git reset --soft <commit-id>
+# Moves HEAD to the previous commit, but keeps changes staged.
+
+Undo commits and discard changes:
+git reset --hard HEAD~1
+git reset --hard <commit-id>
+# Deletes the last commit and all changes, both staged and unstaged.
+
+=======================
+🧺 Git Stash
+=======================
+
+Temporarily save uncommitted changes:
+git stash
+
+Apply most recent stash:
+git stash apply
+
+Apply and remove stash:
+git stash pop
+
+Clear all stashed changes:
+git stash clear
+
+Unstage a file (keep file changes but remove from staging):
+git restore --staged index.js
+
+# Use stash when you want to switch branches without committing your current work.
+
+=======================
+🌿 Branching & Merging
+=======================
+
+Basic Branch Commands:
+git branch                      # List all branches
+git branch newFeature          # Create a new branch
+git switch newFeature          # Switch to the new branch
+git checkout master            # Switch to master
+git checkout -b newFeature     # Create and switch to a new branch
+
+Merge Branches:
+git merge newFeature           # Merge 'newFeature' into the current branch
+
+# Note:
+# - If you create a new branch and make changes, those changes won’t affect the master branch unless merged.
+# - Commits in one branch do not appear in another branch unless explicitly merged or rebased.
+
+=======================
+⚔️ Merge Conflicts
+=======================
+
+- Occur when two or more developers edit the same part of a file and try to merge their branches.
+- Git can't automatically decide which changes to keep.
+- You must manually resolve conflicts in the affected files.
+
+=======================
+🧬 Rebase
+=======================
+
+Interactively edit commits:
+git rebase -i <commit-id>
+
+Use ':x!' inside the editor to exit after modifying commit messages if needed.
+
+# Rebase rewrites commit history – useful for a clean, linear history.
+
+=======================
+🌐 GitHub (Remote Repositories)
+=======================
+
+Add and check remotes:
+git remote -v                     # View remotes
+git remote add origin <url>       # Add remote repo
+
+Push and pull:
+git push origin master            # Push local changes to GitHub
+git pull origin master            # Pull latest changes from GitHub
+git fetch origin master           # Fetch changes without merging
+git merge origin/master           # Merge fetched changes into local branch
+
+Clone a GitHub repository:
+git clone <url>

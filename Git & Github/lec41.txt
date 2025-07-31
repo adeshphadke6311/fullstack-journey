@@ -1,0 +1,125 @@
+
+# 📅 Date: 22/07/2025 (Tuesday)
+
+# 🧠 Topic: **Version Control Systems & Git Basics**
+
+---
+
+## ✅ **What is Version Control?**
+
+**Version Control** is a system that helps developers track and manage changes to source code.
+It enables multiple people to collaborate, view the history of changes, and understand **who changed what and why**.
+
+---
+
+## 🛠️ **How to Install Git**
+
+1. Open Google and search: **Git for Windows**
+2. Go to the official website and **Download Git**
+3. After installation, open **Git Bash**
+
+---
+
+## 💻 **Basic Git Bash Commands**
+
+| Command                                        | Description                               |
+| ---------------------------------------------- | ----------------------------------------- |
+| `pwd`                                          | Print working directory                   |
+| `ls`                                           | List items/files in the current directory |
+| `cd <dir>`                                     | Change directory                          |
+| `mkdir <folder>`                               | Create a new directory                    |
+| `touch <file.ext>`                             | Create a file (e.g., `touch file.txt`)    |
+| `cat <file.txt>`                               | Display file contents                     |
+| `vi <file.txt>`                                | Open file in vi editor                    |
+| `:qa!`                                         | Quit vi (force quit without saving)       |
+| `:wqa!`                                        | Save changes and quit vi forcibly         |
+| `start <file.html>`                            | Open file in default browser              |
+| `clear`                                        | Clear the terminal                        |
+| `git config --global user.name "Adesh Phadke"` | Set Git username globally                 |
+
+---
+
+## 🔧 **Basic Git Commands**
+
+| Command                   | Description                                    |
+| ------------------------- | ---------------------------------------------- |
+| `git init`                | Initialize a new Git repository                |
+| `git clone <repo>`        | Copy a remote repository to your machine       |
+| `git status`              | Show changes in the working directory          |
+| `git add <file>`          | Stage file(s) for commit                       |
+| `git commit -m "message"` | Commit staged changes with a message           |
+| `git push`                | Upload local commits to remote repository      |
+| `git pull`                | Fetch and merge changes from remote repository |
+| `git log`                 | View commit history                            |
+| `git branch`              | View or create branches                        |
+| `git merge <branch>`      | Merge another branch into the current one      |
+
+---
+
+## 📂 **Types of Version Control Systems (VCS)**
+
+### 1. 🖥️ Local Version Control System (LVCS)
+
+* **Description:** Tracks file versions on a local machine.
+* **How it works:** Saves changes in a local database as patch sets.
+* **Example:** RCS (Revision Control System)
+
+**✅ Pros:**
+
+* Simple, fast, and lightweight
+
+**❌ Cons:**
+
+* No team collaboration possible
+* Only one developer can work at a time
+
+---
+
+### 2. 🌐 Centralized Version Control System (CVCS)
+
+* **Description:** Uses a single central server for all versioned files.
+* **How it works:** Developers must connect to the server to update or commit changes.
+* **Examples:** SVN, CVS, Perforce
+
+**✅ Pros:**
+
+* Easier for team collaboration
+* Central backup available
+
+**❌ Cons:**
+
+* Server downtime blocks all development
+* Risk of complete data loss if server fails
+
+---
+
+### 3. 🌍 Distributed Version Control System (DVCS)
+
+* **Description:** Each developer has a complete local copy of the project’s full history.
+* **How it works:** Changes are made locally and synced with others when ready (via push/pull).
+* **Examples:** Git, Mercurial, Bazaar
+
+**✅ Pros:**
+
+* Can work offline
+* Faster operations
+* Full backup exists on every machine
+* Better support for branching and collaboration
+
+**❌ Cons:**
+
+* More complex to understand initially
+
+---
+
+## 📊 **Comparison Table: VCS Types**
+
+| VCS Type    | Internet Required? | Team Collaboration | Examples       |
+| ----------- | ------------------ | ------------------ | -------------- |
+| Local       | ❌ No               | ❌ No               | RCS            |
+| Centralized | ✅ Yes              | ✅ Yes              | SVN, CVS       |
+| Distributed | ❌/✅ Optional       | ✅ Yes              | Git, Mercurial |
+
+---
+
+
